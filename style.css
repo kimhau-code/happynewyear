@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@300;400;500;700;900&family=Satisfy&display=swap');
+body {
+
+    background: #000;
+
+    margin: 0;
+    overflow: hidden;
+
+}
+canvas {
+    cursor: crosshair;
+    display: block;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+.heading {
+    z-index: 1;
+    color: #fff;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.heading h2 {
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+    font-size: 8em;
+    line-height: .9em;
+    margin: 0;
+}
+.heading c {
+    color: #fff;
+}
+
+/* avatar */
+.avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 10%;
+    left: calc(50% - 100px);
+    position: absolute;
+    z-index: 1;
+    cursor: pointer;
+}
+.avatar__img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 5px solid #ec0606;
+  box-shadow: inset 10px 10px 10px rgba(15, 219, 234, 0.9);
+  -webkit-animation: balloon1 6s ease-in-out infinite;
+  -moz-animation: balloon1 6s ease-in-out infinite;
+  -o-animation: balloon1 6s ease-in-out infinite;
+  animation: balloon1 6s ease-in-out infinite;
+}
+@-webkit-keyframes balloon1 {
+  0%,
+  100% {
+      -webkit-transform: translateY(0) rotate(-6deg);
+  }
+  50% {
+      -webkit-transform: translateY(-20px) rotate(8deg);
+  }
+}
+@-moz-keyframes balloon1 {
+  0%,
+  100% {
+      -moz-transform: translateY(0) rotate(-6deg);
+  }
+  50% {
+      -moz-transform: translateY(-20px) rotate(8deg);
+  }
+}
+@-o-keyframes balloon1 {
+  0%,
+  100% {
+      -o-transform: translateY(0) rotate(-6deg);
+  }
+  50% {
+      -o-transform: translateY(-20px) rotate(8deg);
+  }
+}
+@keyframes balloon1 {
+  0%,
+  100% {
+      transform: translateY(0) rotate(-6deg);
+  }
+  50% {
+      transform: translateY(-20px) rotate(8deg);
+  }
+}
+/* end AVATAR */
+
+
+.container1{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: absolute;
+  top:50%;
+  right: auto;
+  pointer-events: none;
+  z-index: 2;
+  -webkit-text-stroke: 1px #fff;
+  color: rgb(255 0 0);
+  /* color: #fff; */
+}
+
+.letter1 {
+  font-size: 5em;
+  line-height: .9em;
+  margin: 0 15px;
+  transform-origin: center;
+  transform: translateX(15px);
+}
+
+#letter1{animation: spin 3s infinite 100ms linear, appear 2s;}
+#letter2{animation: spin 3s infinite 225ms linear, appear 2s;}
+#letter3{animation: spin 3s infinite 350ms linear, appear 2s;}
+#letter4{animation: spin 3s infinite 475ms linear, appear 2s;}
+
+#letter11{animation: spin 3s infinite 100ms linear, appear 2s;}
+#letter12{animation: spin 3s infinite 200ms linear, appear 2s;}
+#letter13{animation: spin 3s infinite 300ms linear, appear 2s;}
+#letter14{animation: spin 3s infinite 400ms linear, appear 2s;}
+
+@keyframes appear{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+@keyframes spin{
+  from {
+    transform: rotate(0deg) translateX(10px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(10px) rotate(-360deg); 
+  }
+}
+
+
+
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  overflow: hidden;
+  background: #21293d;
+
+  /* font-family: 'Pacifico', cursive; */
+} 
+
+.background-heart:before {  
+  background-image: url("https://image.ibb.co/bNC0Go/heart.png"); 
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  background-repeat: repeat;
+  animation: fade-slide-down 2s ease-in-out forwards;
+}
+
+body span {
+  color: #ccc;
+  margin-top: 15px;
+  font-size: 26px;
+}
+
+svg {
+  padding: 20px;
+  
+}
+.container {
+  position: relative;
+  border-radius: 100%;
+  margin-top: 300px;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+}
+
+.container-shadow {
+  position: relative;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  transition: all 0.4s cubic-bezier(.37,.33,.23,.85);
+  box-shadow: 0px 23px 73px -19px rgba(0,0,0,0.25);
+  animation: increase 0.4s cubic-bezier(.37,.33,.23,.85); 
+}
+.circle {
+  background: #FF877C;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 50px ;
+  left: 50px;
+  opacity: 0;
+  display: none;
+}
+.circle-show {
+  opacity: 1;
+  transition: all 0.2s cubic-bezier(.37,.33,.23,.85);
+  animation: circleIncrease 0.5s 0.1s cubic-bezier(.37,.33,.23,.85) 
+}
+
+
+.heart {
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(.37,.33,.23,.85); 
+  stroke: #ec0606;
+  fill: #fff;
+  animation: decrease 0.4s cubic-bezier(.37,.33,.23,.85) paused;
+  align-items: center;
+}
+
+.heart:hover{
+  stroke-opacity: 0.5;
+  fill-opacity: 0.3;
+  stroke-width: 1;
+  fill: #FCB7B7;
+}
+
+.heart-filled {
+  stroke: #e41402;
+  transition: all 0.4s cubic-bezier(.37,.33,.23,.85); 
+  fill: #e91704;
+  animation: increase 0.4s cubic-bezier(.37,.33,.23,.85); 
+
+
+}
+
+.heart-filled:hover {
+  stroke-opacity: 0.5;
+  fill-opacity: 0.8;
+  stroke-width: 1;
+  fill: #F83F2E;  
+}
+
+.save {
+  z-index: 2;
+  animation: spin 3s infinite 500ms linear, appear 2s;
+  color: red;
+  font-weight: 900;
+  font-size: 35px;
+}
+
+
+@keyframes increase {
+    0% {
+      transform: scale(1);
+      stroke-width: 1px;
+      stroke-opacity: 0.7;
+  }
+    50% {
+      transform: scale(1.2);
+      stroke-width: 5px;
+      stroke-opacity: 0.2;
+      transform: translateY(-5px);
+  }
+    100% {
+      transform: scale(1);
+      stroke-width: 1px;
+      stroke-opacity: 0.7;
+      
+  }
+}
+
+@keyframes decrease {
+    0% {
+      transform: scale(1);    
+    }
+    50% {
+      transform: scale(0.9);
+      
+  }
+    100% {
+      transform: scale(1);
+  }
+}
+
+@keyframes circleIncrease {
+    0% {
+      transform: scale(0.1);
+  }
+    50% {
+      transform: scale(1.5);
+      top: 25px;
+  }
+    100% {
+      transform: scale(1);
+
+  }
+}
+
+@keyframes fade-slide-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-5rem);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+audio {
+  width: 200px;
+  z-index: 1000;
+}

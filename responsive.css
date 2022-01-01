@@ -1,0 +1,35 @@
+/* mobile & tablet */
+@media (max-width: 1023px) {
+
+}
+
+/* tablet */ 
+@media (min-width: 740px) and (max-width: 1023px) {
+    .container1 {
+        font-size: 12px;
+        top: 45%;
+    }
+    .save {
+        font-size: 46px;
+    }
+    
+}
+
+/* mobile */
+@media (max-width: 739px) {
+    .avatar {
+        top: 124px;
+    }
+    .avatar__img {
+        height: 150px;
+        width: 150px;
+        margin-left: 20px;
+    }
+    .container1 {
+        font-size: 5px;
+        top: 45%;
+    }
+    .container {
+        margin-top: 165px;
+    }
+}
