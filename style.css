@@ -44,7 +44,7 @@ canvas {
     display: flex;
     justify-content: center;
     align-items: center;
-    top: 10%;
+    top: 15%;
     left: calc(50% - 100px);
     position: absolute;
     z-index: 1;
@@ -114,7 +114,7 @@ canvas {
   right: auto;
   pointer-events: none;
   z-index: 2;
-  -webkit-text-stroke: 1px #fff;
+  -webkit-text-stroke: 0px #fff;
   color: rgb(255 0 0);
   /* color: #fff; */
 }
