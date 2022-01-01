@@ -1,6 +1,6 @@
 /* mobile & tablet */
 @media (max-width: 1023px) {
-
+   
 }
 
 /* tablet */ 
@@ -11,6 +11,18 @@
     }
     .save {
         font-size: 46px;
+        top: 94px;
+        position: relative;
+    }
+    .avatar__img {
+        width: 250px;
+        height: 250px;
+    }
+    .container svg {
+        width: 200px;
+        top: 95px;
+        height: 200px;
+        position: relative;
     }
     
 }
@@ -18,18 +30,25 @@
 /* mobile */
 @media (max-width: 739px) {
     .avatar {
-        top: 124px;
+        top: 75px;
     }
     .avatar__img {
-        height: 150px;
-        width: 150px;
+        max-height: 150px;
+        max-width: 150px;
         margin-left: 20px;
     }
     .container1 {
         font-size: 5px;
-        top: 45%;
+        top: 44%;
     }
     .container {
         margin-top: 165px;
+    }
+    .save {
+        margin-top: -21px;
+    }
+    .letter1 {
+        margin-top: 5px;
+        flex-wrap: wrap;
     }
 }
