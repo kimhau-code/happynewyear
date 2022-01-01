@@ -1,7 +1,3 @@
-/* mobile & tablet */
-@media (max-width: 1023px) {
-   
-}
 
 /* tablet */ 
 @media (min-width: 740px) and (max-width: 1023px) {
@@ -30,7 +26,7 @@
 /* mobile */
 @media (max-width: 739px) {
     .avatar {
-        top: 75px;
+        top: 95px;
     }
     .avatar__img {
         max-height: 150px;
@@ -55,5 +51,18 @@
         position: absolute;
         top: 0;
         width: 115px;
+    }
+}
+@media (max-width: 320px) {
+    .container1 {
+        flex-wrap: wrap;
+    }
+    #player {
+        position: absolute;
+        top: 90%;
+        width: 140px;
+    }
+    .avatar {
+        top: 56px;
     }
 }
