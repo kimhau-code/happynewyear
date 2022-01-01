@@ -1,12 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@300;400;500;700;900&family=Satisfy&display=swap');
 body {
-
     background: #000;
-
     margin: 0;
     overflow: hidden;
-
 }
+
 canvas {
     cursor: crosshair;
     display: block;
@@ -48,6 +46,7 @@ canvas {
     position: absolute;
     z-index: 1;
     cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
 }
 .avatar__img {
   width: 200px;
@@ -236,6 +235,7 @@ svg {
   fill: #fff;
   animation: decrease 0.4s cubic-bezier(.37,.33,.23,.85) paused;
   align-items: center;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .heart:hover{
