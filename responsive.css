@@ -51,4 +51,9 @@
         margin-top: 5px;
         flex-wrap: wrap;
     }
+    #player {
+        position: absolute;
+        top: 0;
+        width: 115px;
+    }
 }
