@@ -98,6 +98,11 @@ canvas {
 }
 /* end AVATAR */
 
+#player {
+  position: absolute;
+  top: 0;
+  width: 115px;
+}
 
 .container1{
   display: flex;
